@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(59, 62, 66);
+}
+
+body {
+    letter-spacing: normal;
+}
+
+
+/* ============= GENERAL ============ */
+
+input,
+button {
+    padding: 1em;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input {
+    border: 0.5px #939090 solid;
+}
+
+button {
+    background-color: #ce3333;
+    font-weight: bold;
+    color: rgb(229, 225, 218);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(229, 225, 218);
+}
+
+section {
+    height: 100vh;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    p {
+        color: #7c7878;
+    }
+    h1 {
+        color: #ce3333;
+    }
+}
+
+
+/*=========== Hero Form ========== */
+
+section.hero__section {
+    .container {
+        form {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            background-color: #f8f4f4;
+            padding: 5em 3em 5em 3em;
+            max-width: 30em;
+            border-radius: 10px;
+        }
+    }
+}
+
+// section.hero__section {
+//     display: grid;
+//     place-items: center;
+//     .container {
+//         padding: 0 3em 0 3em;
+//     }
+// }

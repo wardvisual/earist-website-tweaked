@@ -1,90 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EARIST CLONE</title>
+    <title>Document</title>
 
-    <style>
-        * {
-            user-select: none;
-        }
-        
-        body {
-            font-family: sans-serif;
-        }
-        
-        details {
-            background-color: pink;
-            max-width: 20em;
-            border-radius: 5px;
-        }
-        
-        details div {
-            background-color: rgb(238, 197, 240);
-            padding: 1em;
-        }
-        
-        summary {
-            font-weight: bold;
-            font-style: 1em;
-            padding: 1em;
-        }
-        
-        p {
-            font-size: 12px;
-            padding: 1.2em 1em 1.2em 1em;
-            cursor: pointer;
-        }
-        
-        p:hover {
-            background-color: pink;
-        }
-        
-        p:active {
-            background-color: rgb(224, 119, 136);
-        }
-    </style>
+    <link rel="stylesheet" href="/style/index.css" />
 </head>
 
 <body>
-    <main>
-        <section>
-            <details>
-                <summary>List of Students</summary>
-                <div>
-                    <p>Edward</p>
-                    <p>Edward</p>
-                    <p>Edward</p>
+    <section class="hero__section">
+        <div class="container">
+            <form action="#">
+                <div class="heading">
+                    <h1>Student Access Module</h1>
+                    <p>Please fill out the fields correctly!</p>
                 </div>
-            </details>
-            <pre>
-                <code>
-                    {
-                        "dependecies": {
-                            "react": "1.0.0"
-                        }
-                    }
-                </code>
-                <code >
-                    const app = () => 1
-                </code>
-            </pre>
-            <br />
+                <div class="input">
+                    <label for="module">Module</label>
+                    <input type="text" name="module" id="module" />
+                </div>
+                <div class="input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" />
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
 
-            <form action="">
-                <label for="gender">Gender:</label>
-                <input type="text" list="listt" id="gender" />
-                <datalist id="listt">
-                    <option value="Female"></option>
-                    <option value="Male"></option>
-                </datalist>
+                <div class="fo">
+                    <button>Login</button>
+                </div>
             </form>
-            </datalist>
-        </section>
-    </main>
+        </div>
+    </section>
 </body>
 
 </html>
