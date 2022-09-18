@@ -31,7 +31,7 @@ nav {
         background: var(--color-white-100);
         .content {
             @include layout(flex, space-between, center);
-            .--logo {
+            .__logo {
                 img {
                     max-width: 25em;
                     @media #{$media-mobile-sm} {
@@ -48,17 +48,46 @@ nav {
                     }
                 }
             }
-            // menu
-            .--menu-icon {
+            .--close-menu,
+            .--open-menu {
                 display: none;
             }
         }
         @media #{$media-laptop} {
             .content {
-                ul {
-                    display: none;
+                .--close-menu,
+                .--open-menu {
+                    display: block;
                 }
-                .--menu-icon {
+                ul {
+                    position: fixed;
+                    right: 0;
+                    background: var(--color-red-200);
+                    flex-direction: column;
+                    top: 0;
+                    padding: 2em;
+                    height: 100%;
+                    width: 25em;
+                    align-items: flex-start;
+                    box-shadow: -40px 0px 90px rgba(53, 48, 48, 0.4);
+                    li {
+                        padding: 1em;
+                        &:first-child {
+                            position: absolute;
+                            top: 2em;
+                            right: 1em;
+                            i {
+                                color: var(--color-white-100);
+                                font-size: 2em;
+                            }
+                        }
+                        a {
+                            color: var(--color-white-100);
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+                .__menu-icon {
                     display: block;
                 }
             }

@@ -41,10 +41,13 @@
                 <div class="bottom">
                     <div class="container">
                         <div class="content">
-                            <div class="--logo">
+                            <div class="__logo">
                                 <img src="./assets/logos/earist-logo.svg" alt="earist logo" title="earist logo" />
                             </div>
-                            <ul>
+                            <ul class="visible" id="--menu">
+                                <li id="--close-menu" class="--close-menu">
+                                    <i class="fas fa-times"></i>
+                                </li>
                                 <li><a href="#">News</a></li>
                                 <li><a href="#">About Earist</a></li>
                                 <li><a href="#">Student Service</a></li>
@@ -53,7 +56,9 @@
                                 <li><a href="#">Apply Online</a></li>
                                 <li><a href="#">BID Notice Abstract</a></li>
                             </ul>
-                            <div class="--menu-icon"><i class="fas fa-bars"></i></div>
+                            <div class="--open-menu" id="--open-menu">
+                                <i class="fas fa-bars"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +111,9 @@
             </figure>
         </header>
     </main>
+
+    <!-- Scripts -->
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>
