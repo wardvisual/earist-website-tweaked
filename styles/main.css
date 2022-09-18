@@ -176,7 +176,7 @@ header {
 }
 
 header figure.banner {
-  height: 50vh;
+  height: 55vh;
   width: auto;
   background: url("/assets/content/main-banner.svg");
   background-repeat: no-repeat;
@@ -330,6 +330,7 @@ header figure.article .content article:nth-child(2) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 1em;
   }
   header figure.article .content article:nth-child(2) {
     -webkit-transform: scale(1);
