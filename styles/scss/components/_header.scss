@@ -12,7 +12,7 @@ header {
         background-position: center;
         background-size: cover;
         @include layout(flex,
-        space-between,
+        flex-start,
         center);
         .content {
             @include layout(flex,
@@ -21,24 +21,27 @@ header {
             .text {
                 p {
                     line-height: 1.7;
-                    font-size: 1.7rem;
+                    // font-size: clamp(1rem, calc(1.5rem + 2.5vw), 2rem);
+                    font-size: 2rem;
                 }
                 p.lead {
                     font-weight: var(--font-weight-400);
-                    margin-bottom: -0.6em;
+                    margin-bottom: -1em;
                 }
                 h1 {
+                    // font-size: clamp(2rem, calc(2rem + 8.5vw), 9.5rem);
                     font-size: 10rem;
                     color: var(--color-red-200);
                     letter-spacing: 10px;
                     font-family: serif;
                 }
                 p.paragraph {
-                    font-size: 1.7rem;
+                    color: var(--color-red-200);
+                    margin-top: -0.6em;
                     max-width: 70%;
                 }
                 button {
-                    margin-top: 3em;
+                    margin-top: 2.2em;
                 }
             }
             .image {

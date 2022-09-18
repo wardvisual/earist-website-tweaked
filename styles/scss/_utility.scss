@@ -1,9 +1,17 @@
 .container {
-    max-width: 85em;
+    width: 100%;
+    max-width: 80em;
+    padding: 0 2em 0 2em;
     margin: 0 auto;
-    @media screen and (min-width: 1690px) {
+    @media #{$media-desktop} {
         .content {
-            min-width: 85em;
+            min-width: unset;
+        }
+    }
+    @media #{$media-laptop} {
+        max-width: unset;
+        .content {
+            min-width: unset;
         }
     }
 }

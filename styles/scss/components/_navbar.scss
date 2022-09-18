@@ -39,6 +39,20 @@ nav {
                     }
                 }
             }
+            // menu
+            .--menu-icon {
+                display: none;
+            }
+        }
+        @media #{$media-laptop} {
+            .content {
+                ul {
+                    display: none;
+                }
+                .--menu-icon {
+                    display: block;
+                }
+            }
         }
     }
 }

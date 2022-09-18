@@ -1,10 +1,10 @@
-// Components
-@import "./scss/components/header";
-@import "./scss/components/navbar";
-// Helpers
-@import "./scss/helpers/mixins";
 // Globals
 @import "./scss/variable";
 @import "./scss/reset";
 @import "./scss/layout";
 @import "./scss/utility";
+// Helpers
+@import "./scss/helpers/mixins";
+// Components
+@import "./scss/components/header";
+@import "./scss/components/navbar";
