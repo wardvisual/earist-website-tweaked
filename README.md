@@ -26,7 +26,7 @@ This website is a replication of the Official EARIST College School Website with
 ### Built With
 
 - [HTML]()
-- [CSS]()
+- [SCSS]()
 - [VSCode]()
 
 <!-- CONTACT -->
