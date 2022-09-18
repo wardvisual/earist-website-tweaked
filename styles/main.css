@@ -97,6 +97,20 @@ button:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1401px) {
+  button {
+    max-width: 14em;
+    padding: 1em 3em 1em 3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  button {
+    max-width: 12em;
+    padding: 1em 2em 1em 2em;
+  }
+}
+
 section {
   margin: 28em 0 28em 0;
   padding: 1em;
@@ -124,6 +138,16 @@ section {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: unset;
+    padding: 0 1em 0 1em;
+  }
+  .container .content {
+    min-width: unset;
+  }
+}
+
 header {
   height: 100vh;
   display: -ms-grid;
@@ -135,7 +159,6 @@ header {
 header figure {
   height: 50vh;
   width: auto;
-  max-height: 35em;
   background: url("/assets/content/main-banner.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -188,6 +211,24 @@ header figure .content .text p.paragraph {
 
 header figure .content .text button {
   margin-top: 2.2em;
+}
+
+@media only screen and (max-width: 1401px) {
+  header figure .content .text h1 {
+    font-size: 7rem;
+  }
+  header figure .content .text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header figure .content .text h1 {
+    font-size: 6rem;
+  }
+  header figure .content .text p {
+    font-size: 1.2rem;
+  }
 }
 
 header figure .content .image img {

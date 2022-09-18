@@ -14,4 +14,11 @@
             min-width: unset;
         }
     }
+    @media #{$media-mobile-sm} {
+        max-width: unset;
+        padding: 0 1em 0 1em;
+        .content {
+            min-width: unset;
+        }
+    }
 }

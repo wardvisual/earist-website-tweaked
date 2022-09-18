@@ -6,7 +6,7 @@ header {
     figure {
         height: 50vh;
         width: auto;
-        max-height: 35em;
+        // max-height: 35em;
         background: url("/assets/content/main-banner.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -42,6 +42,22 @@ header {
                 }
                 button {
                     margin-top: 2.2em;
+                }
+                @media #{$media-laptop} {
+                    h1 {
+                        font-size: 7rem;
+                    }
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+                @media #{$media-tablet} {
+                    h1 {
+                        font-size: 6rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
                 }
             }
             .image {

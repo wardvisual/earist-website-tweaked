@@ -76,4 +76,12 @@ button {
         background-color: var(--color-red-100);
         cursor: pointer;
     }
+    @media #{$media-laptop} {
+        max-width: 14em;
+        padding: 1em 3em 1em 3em;
+    }
+    @media #{$media-tablet} {
+        max-width: 12em;
+        padding: 1em 2em 1em 2em;
+    }
 }
