@@ -58,11 +58,12 @@ li {
 // button
 button {
     border: none;
-    padding: 1.2em 4em 1.2em 4em;
+    padding: 1.2em 3em 1.2em 3em;
     font-weight: var(--font-weight-600);
     background-color: var(--color-red-200);
     color: var(--color-white-100);
     font-size: 1rem;
+    border-radius: 5px;
     width: 100%;
     max-width: 16em;
     &:hover {

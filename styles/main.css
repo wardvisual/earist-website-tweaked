@@ -10,7 +10,10 @@ header figure {
   height: 50vh;
   width: auto;
   max-height: 35em;
-  background: var(--color-white-100);
+  background: url("/assets/content/main-banner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,19 +37,26 @@ header figure .content {
           align-items: center;
 }
 
-header figure .content .text {
-  max-width: 45em;
+header figure .content .text p {
+  line-height: 1.7;
+  font-size: 1.7rem;
 }
 
-header figure .content .text p {
-  font-size: 1.4rem;
-  color: var(--color-red-100);
-  font-weight: var(--font-weight-600);
+header figure .content .text p.lead {
+  font-weight: var(--font-weight-400);
+  margin-bottom: -0.6em;
 }
 
 header figure .content .text h1 {
-  font-size: 2.4rem;
-  margin-top: 0.3em;
+  font-size: 10rem;
+  color: var(--color-red-200);
+  letter-spacing: 10px;
+  font-family: serif;
+}
+
+header figure .content .text p.paragraph {
+  font-size: 1.7rem;
+  max-width: 70%;
 }
 
 header figure .content .text button {
@@ -131,6 +141,7 @@ nav .bottom .content ul li a {
 :root {
   --color-red-100: #aa2f2f;
   --color-red-200: #d42b2b;
+  --color-red-300: #fdeded;
   --color-black-100: #393939;
   --color-black-200: #232222;
   --color-white-100: #fafafa;
@@ -204,11 +215,12 @@ li {
 
 button {
   border: none;
-  padding: 1.2em 4em 1.2em 4em;
+  padding: 1.2em 3em 1.2em 3em;
   font-weight: var(--font-weight-600);
   background-color: var(--color-red-200);
   color: var(--color-white-100);
   font-size: 1rem;
+  border-radius: 5px;
   width: 100%;
   max-width: 16em;
 }
