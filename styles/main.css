@@ -212,8 +212,9 @@ header figure.banner .content .text p {
 }
 
 header figure.banner .content .text p:nth-child(1) {
-  font-weight: var(--font-weight-400);
+  font-weight: var(--font-weight-600);
   margin-bottom: -0.8em;
+  font-size: 1.4rem;
 }
 
 header figure.banner .content .text h1 {
