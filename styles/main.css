@@ -491,4 +491,10 @@ nav .bottom .content .--open-menu {
     display: block;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  nav .bottom .content ul {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

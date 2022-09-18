@@ -92,5 +92,12 @@ nav {
                 }
             }
         }
+        @media #{$media-mobile-sm} {
+            .content {
+                ul {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
