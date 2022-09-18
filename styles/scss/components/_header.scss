@@ -6,7 +6,7 @@ header {
     figure {
         height: 50vh;
         width: auto;
-        max-height: 45em;
+        max-height: 35em;
         background: var(--color-white-100);
         @include layout(flex, space-between, center);
         .content {

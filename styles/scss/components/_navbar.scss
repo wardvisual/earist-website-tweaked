@@ -27,7 +27,7 @@ nav {
             @include layout(flex, space-between, center);
             .--logo {
                 img {
-                    max-width: 30em;
+                    max-width: 25em;
                 }
             }
             ul {

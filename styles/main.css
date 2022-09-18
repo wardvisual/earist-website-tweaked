@@ -9,7 +9,7 @@ header {
 header figure {
   height: 50vh;
   width: auto;
-  max-height: 45em;
+  max-height: 35em;
   background: var(--color-white-100);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,7 +108,7 @@ nav .bottom .content {
 }
 
 nav .bottom .content .--logo img {
-  max-width: 30em;
+  max-width: 25em;
 }
 
 nav .bottom .content ul {
