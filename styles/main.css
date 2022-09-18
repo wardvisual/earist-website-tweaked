@@ -1,12 +1,66 @@
 header {
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+header figure {
+  height: 50vh;
+  width: auto;
+  max-height: 45em;
+  background: var(--color-white-100);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header figure .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header figure .content .text {
+  max-width: 45em;
+}
+
+header figure .content .text p {
+  font-size: 1.4rem;
+  color: var(--color-red-100);
+  font-weight: var(--font-weight-600);
+}
+
+header figure .content .text h1 {
+  font-size: 2.4rem;
+  margin-top: 0.3em;
+}
+
+header figure .content .text button {
+  margin-top: 3em;
+}
+
+header figure .content .image img {
+  max-width: 80em;
 }
 
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 9999;
 }
 
@@ -16,8 +70,8 @@ nav > div {
 
 nav .top {
   background: var(--color-red-200);
-  -webkit-box-shadow: 0px 30px 150px rgba(68, 48, 48, 0.3);
-          box-shadow: 0px 30px 150px rgba(68, 48, 48, 0.3);
+  -webkit-box-shadow: 0px 30px 150px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 30px 150px rgba(0, 0, 0, 0.4);
 }
 
 nav .top .content ul {
@@ -75,7 +129,7 @@ nav .bottom .content ul li a {
 }
 
 :root {
-  --color-red-100: #942727;
+  --color-red-100: #aa2f2f;
   --color-red-200: #d42b2b;
   --color-black-100: #393939;
   --color-black-200: #232222;
@@ -83,6 +137,11 @@ nav .bottom .content ul li a {
   --color-white-200: #f6f6f6;
   --color-gray-100: #dfdfdf;
   --color-gray-200: #cfcfcf;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
 }
 
 * {
@@ -91,15 +150,24 @@ nav .bottom .content ul li a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: var(--color-black-100);
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   font-size: 16px;
+  line-height: 1.25;
+  overflow-x: hidden;
+  position: relative;
+  visibility: visible;
   background: var(--color-white-200);
 }
 
@@ -110,6 +178,16 @@ img {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: var(--font-weight-700);
 }
 
 button,
@@ -124,12 +202,37 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  padding: 1.2em 4em 1.2em 4em;
+  font-weight: var(--font-weight-600);
+  background-color: var(--color-red-200);
+  color: var(--color-white-100);
+  font-size: 1rem;
+  width: 100%;
+  max-width: 16em;
+}
+
+button:hover {
+  -webkit-transform: all 0.3s;
+          transform: all 0.3s;
+  background-color: var(--color-red-100);
+  cursor: pointer;
+}
+
 section {
   margin: 28em 0 28em 0;
   padding: 1em;
 }
 
 .container {
-  margin: 0 28em 0 28em;
+  max-width: 85em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1690px) {
+  .container .content {
+    min-width: 85em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

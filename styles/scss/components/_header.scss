@@ -1,5 +1,36 @@
+@import "../helpers/mixins";
 header {
     height: 100vh;
-    // Content
-    .content {}
+    display: grid;
+    grid-template-rows: auto 1fr;
+    figure {
+        height: 50vh;
+        width: auto;
+        max-height: 45em;
+        background: var(--color-white-100);
+        @include layout(flex, space-between, center);
+        .content {
+            @include layout(flex, space-between, center);
+            .text {
+                max-width: 45em;
+                p {
+                    font-size: 1.4rem;
+                    color: var(--color-red-100);
+                    font-weight: var(--font-weight-600);
+                }
+                h1 {
+                    font-size: 2.4rem;
+                    margin-top: 0.3em;
+                }
+                button {
+                    margin-top: 3em;
+                }
+            }
+            .image {
+                img {
+                    max-width: 80em;
+                }
+            }
+        }
+    }
 }
