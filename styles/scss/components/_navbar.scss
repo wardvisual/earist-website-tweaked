@@ -1,17 +1,42 @@
+@import "../helpers/mixins";
 nav {
     position: sticky;
     top: 0;
     width: 100%;
-    background: var(--color-gray-100);
-    // Layout
-    display: flex;
-    justify-content: space-between;
-    .content {
-        padding: 1em;
-        ul {
-            display: flex;
-            align-items: center;
-            gap: 1em;
+    >div {
+        padding: 0.8em 0 0.8em 0;
+    }
+    .top {
+        background: var(--color-red-200);
+        .content {
+            ul {
+                @include layout(flex, flex-start, center);
+                gap: 1em;
+                li {
+                    a {
+                        color: var(--color-white-100);
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        .content {
+            @include layout(flex, space-between, center);
+            .--logo {
+                img {
+                    max-width: 30em;
+                }
+            }
+            ul {
+                @include layout(flex, center, center);
+                gap: 1em;
+                li {
+                    a {
+                        color: var(--color-black-100);
+                    }
+                }
+            }
         }
     }
 }
