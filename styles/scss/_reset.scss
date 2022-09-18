@@ -84,4 +84,7 @@ button {
         max-width: 12em;
         padding: 1em 2em 1em 2em;
     }
+    @media #{$media-mobile-sm} {
+        max-width: unset;
+    }
 }

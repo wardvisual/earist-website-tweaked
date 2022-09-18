@@ -111,6 +111,12 @@ button:hover {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  button {
+    max-width: unset;
+  }
+}
+
 section {
   margin: 28em 0 28em 0;
   padding: 1em;
@@ -189,11 +195,12 @@ header figure .content {
 header figure .content .text p {
   line-height: 1.7;
   font-size: 2rem;
+  max-width: 70%;
 }
 
-header figure .content .text p.lead {
+header figure .content .text p:nth-child(1) {
   font-weight: var(--font-weight-400);
-  margin-bottom: -1em;
+  margin-bottom: -0.8em;
 }
 
 header figure .content .text h1 {
@@ -203,10 +210,9 @@ header figure .content .text h1 {
   font-family: serif;
 }
 
-header figure .content .text p.paragraph {
+header figure .content .text p:nth-child(3) {
   color: var(--color-red-200);
-  margin-top: -0.6em;
-  max-width: 70%;
+  margin-top: -0.8em;
 }
 
 header figure .content .text button {
@@ -215,10 +221,10 @@ header figure .content .text button {
 
 @media only screen and (max-width: 1401px) {
   header figure .content .text h1 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
   header figure .content .text p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -227,7 +233,21 @@ header figure .content .text button {
     font-size: 6rem;
   }
   header figure .content .text p {
+    font-size: 1.4rem;
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header figure .content .text {
+    text-align: center;
+  }
+  header figure .content .text h1 {
+    font-size: 5rem;
+  }
+  header figure .content .text p {
     font-size: 1.2rem;
+    max-width: unset;
   }
 }
 
@@ -287,6 +307,12 @@ nav .bottom .content {
 
 nav .bottom .content .--logo img {
   max-width: 25em;
+}
+
+@media only screen and (max-width: 480px) {
+  nav .bottom .content .--logo img {
+    max-width: 20em;
+  }
 }
 
 nav .bottom .content ul {

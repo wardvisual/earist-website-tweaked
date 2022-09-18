@@ -28,6 +28,9 @@ nav {
             .--logo {
                 img {
                     max-width: 25em;
+                    @media #{$media-mobile-sm} {
+                        max-width: 20em;
+                    }
                 }
             }
             ul {
