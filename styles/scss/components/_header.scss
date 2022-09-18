@@ -102,6 +102,9 @@ header {
                 }
                 &:nth-child(2) {
                     transform: scale(1.19);
+                    &:hover {
+                        transform: scale(1.17);
+                    }
                 }
             }
             @media only screen and (max-width: 1098px) {

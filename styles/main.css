@@ -324,6 +324,11 @@ header figure.article .content article:nth-child(2) {
           transform: scale(1.19);
 }
 
+header figure.article .content article:nth-child(2):hover {
+  -webkit-transform: scale(1.17);
+          transform: scale(1.17);
+}
+
 @media only screen and (max-width: 1098px) {
   header figure.article .content {
     -webkit-box-orient: vertical;
