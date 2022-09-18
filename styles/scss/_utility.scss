@@ -25,6 +25,9 @@
 
 .hidden {
     display: none !important;
+    @media #{$media-desktop} {
+        display: flex !important;
+    }
 }
 
 .visible {

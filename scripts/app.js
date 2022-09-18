@@ -28,6 +28,10 @@ class App {
     static start() {
         this.openMenu();
         this.closeMenu();
+
+        if (window.matchMedia("max-width: 1401px").matches) {
+            console.log("hey");
+        }
     }
 }
 
