@@ -76,6 +76,17 @@ button {
         background-color: var(--color-red-100);
         cursor: pointer;
     }
+    &.outlined {
+        background: none;
+        border: 1px var(--color-red-200) solid;
+        color: var(--color-red-200);
+        padding: 0.8em;
+        max-width: unset;
+        &:hover {
+            background-color: var(--color-red-100);
+            color: var(--color-white-100);
+        }
+    }
     @media #{$media-laptop} {
         max-width: 14em;
         padding: 1em 3em 1em 3em;

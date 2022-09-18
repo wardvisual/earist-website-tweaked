@@ -97,6 +97,19 @@ button:hover {
   cursor: pointer;
 }
 
+button.outlined {
+  background: none;
+  border: 1px var(--color-red-200) solid;
+  color: var(--color-red-200);
+  padding: 0.8em;
+  max-width: unset;
+}
+
+button.outlined:hover {
+  background-color: var(--color-red-100);
+  color: var(--color-white-100);
+}
+
 @media only screen and (max-width: 1401px) {
   button {
     max-width: 14em;
@@ -124,7 +137,7 @@ section {
 
 .container {
   width: 100%;
-  max-width: 80em;
+  max-width: 95em;
   padding: 0 2em 0 2em;
   margin: 0 auto;
 }
@@ -158,11 +171,11 @@ header {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
+  -ms-grid-rows: auto 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr;
 }
 
-header figure {
+header figure.banner {
   height: 50vh;
   width: auto;
   background: url("/assets/content/main-banner.svg");
@@ -180,7 +193,7 @@ header figure {
           align-items: center;
 }
 
-header figure .content {
+header figure.banner .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,67 +205,117 @@ header figure .content {
           align-items: center;
 }
 
-header figure .content .text p {
+header figure.banner .content .text p {
   line-height: 1.7;
   font-size: 2rem;
   max-width: 70%;
 }
 
-header figure .content .text p:nth-child(1) {
+header figure.banner .content .text p:nth-child(1) {
   font-weight: var(--font-weight-400);
   margin-bottom: -0.8em;
 }
 
-header figure .content .text h1 {
+header figure.banner .content .text h1 {
   font-size: 10rem;
   color: var(--color-red-200);
   letter-spacing: 10px;
   font-family: serif;
 }
 
-header figure .content .text p:nth-child(3) {
+header figure.banner .content .text p:nth-child(3) {
   color: var(--color-red-200);
   margin-top: -0.8em;
 }
 
-header figure .content .text button {
+header figure.banner .content .text button {
   margin-top: 2.2em;
 }
 
 @media only screen and (max-width: 1401px) {
-  header figure .content .text h1 {
+  header figure.banner .content .text h1 {
     font-size: 8rem;
   }
-  header figure .content .text p {
+  header figure.banner .content .text p {
     font-size: 1.6rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  header figure .content .text h1 {
+  header figure.banner .content .text h1 {
     font-size: 6rem;
   }
-  header figure .content .text p {
+  header figure.banner .content .text p {
     font-size: 1.4rem;
     max-width: 80%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  header figure .content .text {
+  header figure.banner .content .text {
     text-align: center;
   }
-  header figure .content .text h1 {
+  header figure.banner .content .text h1 {
     font-size: 5rem;
   }
-  header figure .content .text p {
+  header figure.banner .content .text p {
     font-size: 1.2rem;
     max-width: unset;
   }
 }
 
-header figure .content .image img {
+header figure.banner .content .image img {
   max-width: 80em;
+}
+
+header figure.article {
+  margin-top: -2em;
+}
+
+header figure.article .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+header figure.article .content article {
+  border-radius: 5px;
+  padding: 3em 2em 3em 2em;
+  background: var(--color-white-100);
+  -webkit-box-shadow: 0px 4px 80px rgba(206, 204, 204, 0.5);
+          box-shadow: 0px 4px 80px rgba(206, 204, 204, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+header figure.article .content article h2 {
+  color: var(--color-red-100);
+}
+
+header figure.article .content article:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 nav {
