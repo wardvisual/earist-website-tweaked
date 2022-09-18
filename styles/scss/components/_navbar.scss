@@ -1,0 +1,17 @@
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--color-gray-100);
+    // Layout
+    display: flex;
+    justify-content: space-between;
+    .content {
+        padding: 1em;
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+    }
+}

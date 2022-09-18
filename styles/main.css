@@ -1,0 +1,91 @@
+:root {
+  --color-red-100: #942727;
+  --color-red-200: #d42b2b;
+  --color-black-100: #393939;
+  --color-black-200: #232222;
+  --color-white-100: #fafafa;
+  --color-white-200: #f6f6f6;
+  --color-gray-100: #dfdfdf;
+  --color-gray-200: #cfcfcf;
+}
+
+header {
+  height: 100vh;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--color-gray-100);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .content {
+  padding: 1em;
+}
+
+nav .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--color-black-100);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background: var(--color-white-200);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+  background: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+section {
+  margin: 30em 0 30em 0;
+  padding: 1em;
+}
+
+.container {
+  margin: 0 30em 0 30em;
+}
+/*# sourceMappingURL=main.css.map */
