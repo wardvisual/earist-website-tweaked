@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/wardvisual/earist-website-tweaked">
-    <img src="./assets/content/readme-banner.png" alt="banner">
+    <img src="./assets/content/readme-banner.jpg" alt="banner">
   </a>
   <h3 align="center">EARIST Website Tweaked</h3>
 
