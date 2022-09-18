@@ -16,6 +16,12 @@ nav {
                 li {
                     a {
                         color: var(--color-white-100);
+                        @media #{$media-tablet} {
+                            font-size: 0.9rem;
+                        }
+                        @media #{$media-mobile-sm} {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }

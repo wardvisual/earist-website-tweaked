@@ -289,6 +289,18 @@ nav .top .content ul li a {
   color: var(--color-white-100);
 }
 
+@media only screen and (max-width: 768px) {
+  nav .top .content ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav .top .content ul li a {
+    font-size: 0.8rem;
+  }
+}
+
 nav .bottom {
   background: var(--color-white-100);
 }
