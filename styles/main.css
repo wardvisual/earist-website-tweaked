@@ -360,6 +360,10 @@ header figure.article .content article:nth-child(2):hover {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  header figure.article .content article:nth-child(2):hover {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
 }
 
 nav {
