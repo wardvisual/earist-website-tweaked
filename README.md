@@ -33,6 +33,6 @@ This website is a replication of the Official EARIST College School Website with
 
 ## Contact
 
-Edward Fernandez - [@wardvisual](https://twitter.com/wardvisual)
+Edward Fernandez: [@wardvisual](https://twitter.com/wardvisual)
 
-Project Link: [earist-website-tweaked](https://github.com/wardvisual/earist-website-tweaked)
+Project Link: [earist-website-tweaked](https://earist.vercel.app/)
